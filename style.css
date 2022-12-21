@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+:root {
+  --color-black: #0b0b0b;
+  --color-raisen-black: #161925;
+  --color-prussian-blue: #23395b;
+  --color-queen-blue: #406e8e;
+  --color-cadet-gray: #8ea8c3;
+  --color-aero-blue: #cbf7ed;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--color-aero-blue);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-prussian-blue);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-prussian-blue);
+}
+
+body {
+  background-color: var(--color-raisen-black);
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  width: 100%;
+  height: 180px;
+
+  border-bottom: 1px solid var(--color-black);
+}
+
+.title {
+  font-size: 54px;
+  font-weight: 700;
+  color: var(--color-prussian-blue);
+  text-shadow: 2px 2px var(--color-aero-blue);
+}
+
+.subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-aero-blue);
+}
+
+section {
+  display: block;
+  margin: 20px auto 50px auto;
+  max-width: 1024px;
+  width: 100%;
+}
+
+.card {
+  display: inline-block;
+  vertical-align: top;
+  margin: 10px 40px 20px 40px;
+  background-color: var(--color-black);
+  width: 245px;
+  height: auto;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.card img {
+  width: auto;
+  height: auto;
+  border-radius: 8px;
+  max-height: 320px;
+}
+
+.card details summary {
+  color: var(--color-cadet-gray);
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.card details p {
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.ano,
+.episodios,
+.status {
+  background-color: var(--color-raisen-black);
+  border-radius: 8px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+}
+
+.tag {
+  background-color: var(--color-queen-blue);
+  min-width: 10px;
+  color: white;
+}
+
+.sinopse {
+  height: 190px;
+  overflow: hidden;
+  overflow-y: scroll;
+  margin-top: 10px;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.24);
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+footer p {
+  color: var(--color-aero-blue);
+}
+
+footer p a {
+  text-decoration: none;
+  color: var(--color-aero-blue);
+}
